@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ángela Izquierdo García | Cryptography Engineer & Data Scientist</title>
+    <meta name="description" content="Cryptography Engineer & Data Scientist with experience at Apple (WebKit crypto) and SciTheWorld. MSc in Data Science from UAM. Specializing in post-quantum cryptography, ML, and data engineering.">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Ángela Izquierdo García | Cryptography Engineer & Data Scientist">
+    <meta property="og:description" content="Cryptography Engineer & Data Scientist with experience at Apple (WebKit crypto) and SciTheWorld. MSc in Data Science from UAM. Specializing in post-quantum cryptography, ML, and data engineering.">
+    <meta property="og:image" content="assets/images/og-image.png">
+    <meta property="og:url" content="https://angelaig.github.io">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16.png">
+    <link rel="shortcut icon" href="assets/images/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/main.css?v=12">
+    <link rel="stylesheet" href="css/components.css?v=17">
+    <link rel="stylesheet" href="css/sections.css?v=13">
+    <link rel="stylesheet" href="css/animations.css?v=12">
+    <link rel="stylesheet" href="css/responsive.css?v=12">
+</head>
+<body>
+
+    <!-- Skip to Content -->
+    <a href="#main-content" class="skip-to-content">Skip to main content</a>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+        <div class="scroll-progress" id="scroll-progress"></div>
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo" aria-label="Ángela Izquierdo, Home">
+                <img src="assets/images/aig-logo-48.png" alt="ÁI Logo" class="nav-logo-img" width="48" height="48">
+                <span class="nav-logo-text">ÁI</span>
+            </a>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <a href="assets/cv/cv_angela_2026.pdf" class="btn btn-outline btn-sm" download>Download CV</a>
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main id="main-content">
+
+        <!-- Hero Section -->
+        <section id="hero" class="hero">
+            <canvas id="particle-canvas"></canvas>
+            <div class="hero-layout">
+                <div class="hero-content" data-parallax>
+                    <p class="hero-greeting">Hello, I'm</p>
+                    <h1 class="hero-name">Ángela Izquierdo</h1>
+                    <div class="hero-typed">
+                        <span class="typed-prefix">I </span><span id="typed-output"></span><span class="typed-cursor">|</span>
+                    </div>
+                    <p class="hero-tagline">Cryptography Engineer & Data Scientist. From post-quantum crypto to large-scale data pipelines</p>
+                    <div class="hero-ctas">
+                        <a href="#projects" class="btn btn-primary">View My Work</a>
+                        <a href="#contact" class="btn btn-outline">Get In Touch</a>
+                    </div>
+                </div>
+                <div class="hero-cards">
+                    <div class="hero-card glass-card" style="animation-delay: 0.3s">
+                        <span class="hero-card-icon"><i data-lucide="lock"></i></span>
+                        <h3>Cryptography</h3>
+                        <p>Post-quantum crypto & secure protocols</p>
+                    </div>
+                    <div class="hero-card glass-card" style="animation-delay: 0.5s">
+                        <span class="hero-card-icon"><i data-lucide="brain"></i></span>
+                        <h3>Data Science</h3>
+                        <p>ML, NLP & statistical modeling</p>
+                    </div>
+                    <div class="hero-card glass-card" style="animation-delay: 0.7s">
+                        <span class="hero-card-icon"><i data-lucide="database"></i></span>
+                        <h3>Data Engineering</h3>
+                        <p>Pipelines, ETL & cloud architecture</p>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <div class="scroll-line"></div>
+                <span>SCROLL</span>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-label">ABOUT ME</span>
+                    <h2 class="section-title">Know Who I Am</h2>
+                    <div class="section-divider"></div>
+                </div>
+                <div class="about-grid">
+                    <div class="about-photo-wrapper">
+                        <div class="about-photo-border"></div>
+                        <img src="assets/images/angela-photo.jpg" alt="Ángela Izquierdo García" class="about-photo">
+                    </div>
+                    <div class="about-text">
+                        <p>I'm a Cryptography Engineer and Data Scientist with dual degrees in Computer Science and Mathematics from the University of Granada, and an MSc in Data Science from Universidad Autónoma de Madrid. I've worked as a Cryptography Engineer at Apple on the WebKit engine and as a Data Scientist at SciTheWorld, building scalable NLP pipelines and trading analysis tools.</p>
+                        <p>My research spans post-quantum cryptography: lattice-based algorithms, encryption primitives, and secure communication protocols, alongside data science work with machine learning, statistical modeling, and large-scale data processing. I've also worked as a freelance developer building full-stack applications with React, Node.js, and PostgreSQL.</p>
+                        <div class="stats-row">
+                            <div class="stat">
+                                <span class="stat-number" data-target="3">0</span><span class="stat-suffix"></span>
+                                <span class="stat-label">Degrees</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number" data-target="5">0</span><span class="stat-suffix"></span>
+                                <span class="stat-label">Languages</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number" data-target="3">0</span><span class="stat-suffix">+</span>
+                                <span class="stat-label">Years Experience</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number" data-target="22">0</span><span class="stat-suffix">%</span>
+                                <span class="stat-label">Crypto Speed Gain</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="section section-alt">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-label">EXPERIENCE</span>
+                    <h2 class="section-title">Where I've Worked</h2>
+                    <div class="section-divider"></div>
+                </div>
+                <div class="timeline">
+                    <!-- Freelance Developer -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">Mar 2023 - Oct 2025</div>
+                        <div class="timeline-card glass-card">
+                            <h3>Freelance Developer</h3>
+                            <p class="timeline-company">Independent Projects, Remote</p>
+                            <ul>
+                                <li>Developed multiple independent projects and short-term collaborations while traveling, gaining practical experience in React, Node.js, Express, PostgreSQL, and JavaScript/TypeScript</li>
+                                <li>Managed full project lifecycle: design, implementation, testing, and deployment</li>
+                                <li>Delivered functional solutions providing sufficient income to support living expenses during this period</li>
+                            </ul>
+                            <div class="timeline-tags">
+                                <span>React</span>
+                                <span>Node.js</span>
+                                <span>Express</span>
+                                <span>PostgreSQL</span>
+                                <span>TypeScript</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Apple - Cryptography Engineer -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">Jun 2022 - Dec 2022</div>
+                        <div class="timeline-card glass-card">
+                            <h3>Cryptography Engineer</h3>
+                            <p class="timeline-company">Apple, Remote | Cupertino, California, USA</p>
+                            <ul>
+                                <li>Took ownership of core cryptographic algorithms in the WebKit engine, focusing on reliability and performance</li>
+                                <li>Refactored legacy crypto modules, achieving up to a 22% improvement in execution speed and code maintainability</li>
+                                <li>Fixed critical bugs in secure communication routines, reducing error rates by 18% and improving compatibility across platforms</li>
+                            </ul>
+                            <div class="timeline-tags">
+                                <span>Cryptography</span>
+                                <span>WebKit</span>
+                                <span>C++</span>
+                                <span>Secure Communication</span>
+                                <span>Performance</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- SciTheWorld - Data Scientist -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">Jul 2021 - Jun 2022</div>
+                        <div class="timeline-card glass-card">
+                            <h3>Data Scientist</h3>
+                            <p class="timeline-company">SciTheWorld (Himitsu Tech), Madrid, Spain</p>
+                            <ul>
+                                <li>Developed a scalable pipeline to process hundreds of 300-page documents daily for OCR-based NLP tasks</li>
+                                <li>Enhanced pre-processing routines and indexing logic, improving pipeline efficiency by approximately 20%</li>
+                                <li>Built internal tools to analyze liquidity-driven strategies in futures trading, achieving a discretionary strategy accuracy of 70–80%</li>
+                                <li>Contributed to the design and migration of ETL pipelines and databases for Banco Santander to AWS</li>
+                            </ul>
+                            <div class="timeline-tags">
+                                <span>Python</span>
+                                <span>NLP</span>
+                                <span>OCR</span>
+                                <span>AWS</span>
+                                <span>ETL</span>
+                                <span>Data Pipelines</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-label">SKILLS</span>
+                    <h2 class="section-title">What I Work With</h2>
+                    <div class="section-divider"></div>
+                </div>
+                <div class="skill-tabs">
+                    <button class="skill-tab active" data-category="all">All</button>
+                    <button class="skill-tab" data-category="programming">Programming</button>
+                    <button class="skill-tab" data-category="data-science">Data Science</button>
+                    <button class="skill-tab" data-category="cryptography">Cryptography</button>
+                    <button class="skill-tab" data-category="web-databases">Web & Databases</button>
+                    <button class="skill-tab" data-category="tools">Tools</button>
+                    <button class="skill-tab" data-category="languages">Languages</button>
+                </div>
+                <div class="skills-grid">
+                    <!-- Programming -->
+                    <div class="skill-card" data-category="programming">
+                        <div class="skill-icon"><img src="assets/icons/python.svg" alt="Python"></div>
+                        <span class="skill-name">Python</span>
+                        <div class="skill-bar"><div class="skill-fill" data-level="92"></div></div>
+                    </div>
+                    <div class="skill-card" data-category="programming">
+                        <div class="skill-icon"><i data-lucide="cpu"></i></div>
+                        <span class="skill-name">C++</span>
+                        <div class="skill-bar"><div class="skill-fill" data-level="85"></div></div>
+                    </div>
+                    <div class="skill-card" data-category="programming">
+                        <div class="skill-icon"><i data-lucide="shield"></i></div>
+                        <span class="skill-name">Rust</span>
+                        <div class="skill-bar"><div class="skill-fill" data-level="80"></div></div>
+                    </div>
+                    <div class="skill-card" data-category="programming">
+                        <div class="skill-icon"><i data-lucide="zap"></i></div>
+                        <span class="skill-name">Go</span>
+                        <div class="skill-bar"><div class="skill-fill" data-level="78"></div></div>
+                    </div>
+                    <div class="skill-card" data-category="programming">
+                        <div class="skill-icon"><img src="assets/icons/javascript.svg" alt="JavaScript"></div>
+                        <span class="skill-name">JavaScript</span>
+                        <div class="skill-bar"><div class="skill-fill" data-level="88"></div></div>
+                    </div>
+                    <div class="skill-card" data-category="programming">
+                        <div class="skill-icon"><i data-lucide="bar-chart"></i></div>
+                        <span class="skill-name">R</span>
+                        <div class="skill-bar"><div class="skill-fill" data-level="75"></div></div>
+                    </div>
+                    <div class="skill-card" data-category="programming">
+                        <div class="skill-icon"><i data-lucide="coffee"></i></div>
+                        <span class="skill-name">Java</span>
+                        <div class="skill-bar"><div class="skill-fill" data-level="80"></div></div>
+                    </div>
+                    <div class="skill-card" data-category="programming">
+                        <div class="skill-icon"><img src="assets/icons/php.svg" alt="PHP"></div>
+                        <span class="skill-name">PHP</span>
+                        <div class="skill-bar"><div class="skill-fill" data-level="72"></div></div>
+                    </div>
+                    <div class="skill-card" data-category="programming">
+                        <div class="skill-icon"><i data-lucide="gem"></i></div>
+                        <span class="skill-name">Ruby</span>
+                        <div class="skill-bar"><div class="skill-fill" data-level="68"></div></div>
+                    </div>
+
+                    <!-- Data Science -->
+                    <div class="skill-card" data-category="data-science">
+                        <div class="skill-icon"><i data-lucide="bar-chart-2"></i></div>
+                        <span class="skill-name">Data Analysis</span>
+                        <div class="skill-bar"><div class="skill-fill" data-level="90"></div></div>
+                    </div>
+                    <div class="skill-card" data-category="data-science">
+                        <div class="skill-icon"><i data-lucide="brain"></i></div>
+                        <span class="skill-name">Machine Learning</span>
+                        <div class="skill-bar"><div class="skill-fill" data-level="85"></div></div>
+                    </div>
+                    <div class="skill-card" data-category="data-science">
+                        <div class="skill-icon"><i data-lucide="message-square"></i></div>
+                        <span class="skill-name">NLP</span>
+                        <div class="skill-bar"><div class="skill-fill" data-level="82"></div></div>
+                    </div>
+                    <div class="skill-card" data-category="data-science">
+                        <div class="skill-icon"><i data-lucide="scatter-chart"></i></div>
+                        <span class="skill-name">Clustering</span>
+                        <div class="skill-bar"><div class="skill-fill" data-level="80"></div></div>
+                    </div>
+                    <div class="skill-card" data-category="data-science">
+                        <div class="skill-icon"><i data-lucide="trending-up"></i></div>
+                        <span class="skill-name">Predictive Modeling</span>
+                        <div class="skill-bar"><div class="skill-fill" data-level="85"></div></div>
+                    </div>
+                    <div class="skill-card" data-category="data-science">
+                        <div class="skill-icon"><i data-lucide="sigma"></i></div>
+                        <span class="skill-name">Statistics</span>
+                        <div class="skill-bar"><div class="skill-fill" data-level="88"></div></div>
+                    </div>
+                    <div class="skill-card" data-category="data-science">
+                        <div class="skill-icon"><i data-lucide="line-chart"></i></div>
+                        <span class="skill-name">Data Visualization</span>
+                        <div class="skill-bar"><div class="skill-fill" data-level="78"></div></div>
+                    </div>
+
+                    <!-- Cryptography -->
+                    <div class="skill-card" data-category="cryptography">
+                        <div class="skill-icon"><i data-lucide="atom"></i></div>
+                        <span class="skill-name">Post-Quantum Crypto</span>
+                        <div class="skill-bar"><div class="skill-fill" data-level="85"></div></div>
+                    </div>
+                    <div class="skill-card" data-category="cryptography">
+                        <div class="skill-icon"><i data-lucide="grid-3x3"></i></div>
+                        <span class="skill-name">Lattice-Based Crypto</span>
+                        <div class="skill-bar"><div class="skill-fill" data-level="88"></div></div>
+                    </div>
+                    <div class="skill-card" data-category="cryptography">
+                        <div class="skill-icon"><i data-lucide="lock"></i></div>
+                        <span class="skill-name">Crypto Protocols</span>
+                        <div class="skill-bar"><div class="skill-fill" data-level="82"></div></div>
+                    </div>
+                    <div class="skill-card" data-category="cryptography">
+                        <div class="skill-icon"><i data-lucide="shield-check"></i></div>
+                        <span class="skill-name">Secure Communication</span>
+                        <div class="skill-bar"><div class="skill-fill" data-level="80"></div></div>
+                    </div>
+                    <div class="skill-card" data-category="cryptography">
+                        <div class="skill-icon"><i data-lucide="globe"></i></div>
+                        <span class="skill-name">WebKit Crypto</span>
+                        <div class="skill-bar"><div class="skill-fill" data-level="78"></div></div>
+                    </div>
+
+                    <!-- Web & Databases -->
+                    <div class="skill-card" data-category="web-databases">
+                        <div class="skill-icon"><img src="assets/icons/html-5.svg" alt="HTML/CSS"></div>
+                        <span class="skill-name">HTML/CSS</span>
+                        <div class="skill-bar"><div class="skill-fill" data-level="85"></div></div>
+                    </div>
+                    <div class="skill-card" data-category="web-databases">
+                        <div class="skill-icon"><i data-lucide="server"></i></div>
+                        <span class="skill-name">Django</span>
+                        <div class="skill-bar"><div class="skill-fill" data-level="78"></div></div>
+                    </div>
+                    <div class="skill-card" data-category="web-databases">
+                        <div class="skill-icon"><img src="assets/icons/mongodb.svg" alt="MongoDB"></div>
+                        <span class="skill-name">MongoDB</span>
+                        <div class="skill-bar"><div class="skill-fill" data-level="78"></div></div>
+                    </div>
+                    <div class="skill-card" data-category="web-databases">
+                        <div class="skill-icon"><img src="assets/icons/mysql.svg" alt="MySQL"></div>
+                        <span class="skill-name">MySQL</span>
+                        <div class="skill-bar"><div class="skill-fill" data-level="82"></div></div>
+                    </div>
+                    <div class="skill-card" data-category="web-databases">
+                        <div class="skill-icon"><i data-lucide="database"></i></div>
+                        <span class="skill-name">PostgreSQL</span>
+                        <div class="skill-bar"><div class="skill-fill" data-level="85"></div></div>
+                    </div>
+
+                    <!-- Tools -->
+                    <div class="skill-card" data-category="tools">
+                        <div class="skill-icon"><img src="assets/icons/git.svg" alt="Git"></div>
+                        <span class="skill-name">Git</span>
+                        <div class="skill-bar"><div class="skill-fill" data-level="90"></div></div>
+                    </div>
+                    <div class="skill-card" data-category="tools">
+                        <div class="skill-icon"><img src="assets/icons/linux.svg" alt="Linux"></div>
+                        <span class="skill-name">Linux</span>
+                        <div class="skill-bar"><div class="skill-fill" data-level="85"></div></div>
+                    </div>
+                    <div class="skill-card" data-category="tools">
+                        <div class="skill-icon"><img src="assets/icons/docker.svg" alt="Docker"></div>
+                        <span class="skill-name">Docker</span>
+                        <div class="skill-bar"><div class="skill-fill" data-level="80"></div></div>
+                    </div>
+                    <div class="skill-card" data-category="tools">
+                        <div class="skill-icon"><i data-lucide="github"></i></div>
+                        <span class="skill-name">GitHub</span>
+                        <div class="skill-bar"><div class="skill-fill" data-level="88"></div></div>
+                    </div>
+
+                    <!-- Languages (Human) -->
+                    <div class="skill-card" data-category="languages">
+                        <div class="skill-icon"><i data-lucide="globe"></i></div>
+                        <span class="skill-name">Spanish</span>
+                        <div class="skill-bar"><div class="skill-fill" data-level="100"></div></div>
+                        <span class="skill-level-label">Native</span>
+                    </div>
+                    <div class="skill-card" data-category="languages">
+                        <div class="skill-icon"><i data-lucide="globe"></i></div>
+                        <span class="skill-name">English</span>
+                        <div class="skill-bar"><div class="skill-fill" data-level="90"></div></div>
+                        <span class="skill-level-label">C1 (CAE)</span>
+                    </div>
+                    <div class="skill-card" data-category="languages">
+                        <div class="skill-icon"><i data-lucide="globe"></i></div>
+                        <span class="skill-name">Italian</span>
+                        <div class="skill-bar"><div class="skill-fill" data-level="88"></div></div>
+                        <span class="skill-level-label">C1</span>
+                    </div>
+                    <div class="skill-card" data-category="languages">
+                        <div class="skill-icon"><i data-lucide="globe"></i></div>
+                        <span class="skill-name">French</span>
+                        <div class="skill-bar"><div class="skill-fill" data-level="50"></div></div>
+                        <span class="skill-level-label">Intermediate</span>
+                    </div>
+                    <div class="skill-card" data-category="languages">
+                        <div class="skill-icon"><i data-lucide="globe"></i></div>
+                        <span class="skill-name">German</span>
+                        <div class="skill-bar"><div class="skill-fill" data-level="50"></div></div>
+                        <span class="skill-level-label">Intermediate</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section section-alt">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-label">PROJECTS</span>
+                    <h2 class="section-title">What I've Built</h2>
+                    <div class="section-divider"></div>
+                </div>
+                <div class="filter-buttons">
+                    <button class="active" data-filter="all">All</button>
+                    <button data-filter="academic">Academic</button>
+                    <button data-filter="freelance">Freelance</button>
+                </div>
+                <div class="projects-grid">
+                    <!-- TFM: Chess Game Analytics - Master Thesis -->
+                    <div class="project-card" data-category="academic" data-status="completed">
+                        <div class="project-image project-image--planned">
+                            <div class="project-placeholder">
+                                <i data-lucide="bar-chart-2"></i>
+                            </div>
+                            <div class="project-overlay">
+                                <a href="project-pages/chess_analytics.html" class="btn btn-sm btn-primary">View Details</a>
+                            </div>
+                        </div>
+                        <div class="project-body">
+                            <span class="project-category">TFM | MSc DATA SCIENCE, UAM (2024)</span>
+                            <h3>Chess Game Analytics</h3>
+                            <p>Comprehensive data science study on chess game data combining descriptive analysis, analytical study, and ML techniques. Explored opening frequency and success correlation, rating evolution, and move quality analysis. Applied K-Means, DBSCAN, and hierarchical clustering to group players by style, built result prediction models, and developed an opening recommendation system.</p>
+                            <div class="project-tags">
+                                <span>Python</span>
+                                <span>K-Means</span>
+                                <span>DBSCAN</span>
+                                <span>Gradient Boosting</span>
+                                <span>Clustering</span>
+                                <span>Jupyter</span>
+                                <span>Data Analysis</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- TFG: Lattice-Based Cryptography Algorithms - Bachelor Thesis -->
+                    <div class="project-card" data-category="academic" data-status="completed">
+                        <div class="project-image project-image--planned">
+                            <div class="project-placeholder">
+                                <i data-lucide="lock"></i>
+                            </div>
+                            <div class="project-overlay">
+                                <a href="project-pages/lattice_cryptography.html" class="btn btn-sm btn-primary">View Details</a>
+                            </div>
+                        </div>
+                        <div class="project-body">
+                            <span class="project-category">TFG | BSc MATHS + CS, UGR (2021)</span>
+                            <h3>Cryptographic Applications of Lattice Optimization Problems</h3>
+                            <p>In-depth study of lattice optimization problems (SVP, CVP) and their cryptographic applications. Implemented and analyzed basis reduction algorithms (LLL), sieving algorithms (AKS, Gaussian sieve), and Voronoi-based methods. Built a GSieve implementation and studied post-quantum cryptosystems including NTRU, LWE, GGH, and SWIFFT hash functions.</p>
+                            <div class="project-tags">
+                                <span>Lattices</span>
+                                <span>SVP / CVP</span>
+                                <span>LLL Algorithm</span>
+                                <span>NTRU</span>
+                                <span>LWE</span>
+                                <span>Post-Quantum</span>
+                                <span>GSieve</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Freelance: Restaurant Management System -->
+                    <div class="project-card" data-category="freelance" data-status="completed">
+                        <div class="project-image project-image--planned">
+                            <div class="project-placeholder">
+                                <i data-lucide="utensils"></i>
+                            </div>
+                            <div class="project-overlay">
+                                <a href="project-pages/restaurant_system.html" class="btn btn-sm btn-primary">View Details</a>
+                            </div>
+                        </div>
+                        <div class="project-body">
+                            <span class="project-category">FREELANCE PROJECT</span>
+                            <h3>Restaurant Management System</h3>
+                            <p>Full-stack restaurant management platform handling table bookings, real-time order management, and kitchen dispatch. Customers can reserve tables and place orders, while kitchen staff receive live order updates for preparation and service coordination.</p>
+                            <div class="project-tags">
+                                <span>React</span>
+                                <span>Node.js</span>
+                                <span>Express</span>
+                                <span>PostgreSQL</span>
+                                <span>Real-time</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Freelance: MLOps Pipeline for Trading Models -->
+                    <div class="project-card" data-category="freelance" data-status="completed">
+                        <div class="project-image project-image--planned">
+                            <div class="project-placeholder">
+                                <i data-lucide="workflow"></i>
+                            </div>
+                            <div class="project-overlay">
+                                <a href="project-pages/mlops_trading.html" class="btn btn-sm btn-primary">View Details</a>
+                            </div>
+                        </div>
+                        <div class="project-body">
+                            <span class="project-category">FREELANCE PROJECT</span>
+                            <h3>MLOps Pipeline for Trading Models</h3>
+                            <p>Production MLOps pipeline with drift detection for trading models. Built a LightGBM return prediction model with full infrastructure: feature store with versioning, MLflow model registry, drift detection (PSI & KS tests), concept drift monitoring via rolling Sharpe ratio, automated Airflow retraining, and champion/challenger shadow-testing framework.</p>
+                            <div class="project-tags">
+                                <span>MLflow</span>
+                                <span>EvidentlyAI</span>
+                                <span>Airflow</span>
+                                <span>Docker</span>
+                                <span>Redis</span>
+                                <span>PostgreSQL</span>
+                                <span>Grafana</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications Section -->
+        <section id="certifications" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-label">CERTIFICATIONS</span>
+                    <h2 class="section-title">Certifications</h2>
+                    <div class="section-divider"></div>
+                </div>
+                <div class="cert-grid">
+                    <!-- Trading & ML -->
+                    <div class="cert-card glass-card">
+                        <div class="cert-icon">
+                            <i data-lucide="brain"></i>
+                        </div>
+                        <div class="cert-body">
+                            <h3>Introduction to Trading, Machine Learning and GCP</h3>
+                            <div class="cert-badges">
+                                <span class="badge badge-gold">Coursera</span>
+                            </div>
+                            <p class="cert-issuer">Coursera, 2022</p>
+                            <p class="cert-detail">Trading fundamentals, Machine Learning applications, and Google Cloud Platform integration.</p>
+                        </div>
+                    </div>
+
+                    <!-- Google ML -->
+                    <div class="cert-card glass-card">
+                        <div class="cert-icon">
+                            <i data-lucide="cloud"></i>
+                        </div>
+                        <div class="cert-body">
+                            <h3>How Google Does Machine Learning</h3>
+                            <div class="cert-badges">
+                                <span class="badge badge-gold">Coursera</span>
+                            </div>
+                            <p class="cert-issuer">Coursera, 2022</p>
+                            <p class="cert-detail">Google's approach to ML at scale: data pipelines, model training, and production deployment.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="section section-alt">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-label">EDUCATION</span>
+                    <h2 class="section-title">Academic Background</h2>
+                    <div class="section-divider"></div>
+                </div>
+                <div class="edu-grid">
+                    <!-- MSc Data Science -->
+                    <div class="edu-card glass-card">
+                        <div class="edu-icon">
+                            <i data-lucide="brain"></i>
+                        </div>
+                        <div class="edu-body">
+                            <h3>MSc in Data Science</h3>
+                            <p class="edu-institution">Universidad Autónoma de Madrid</p>
+                            <p class="edu-detail">2022–2024. Thesis: "Chess Game Analytics: Análisis de estrategias y resultados en partidas de ajedrez". Player clustering, result prediction, and opening recommendation systems.</p>
+                        </div>
+                    </div>
+
+                    <!-- BSc Computer Science -->
+                    <div class="edu-card glass-card">
+                        <div class="edu-icon">
+                            <i data-lucide="graduation-cap"></i>
+                        </div>
+                        <div class="edu-body">
+                            <h3>BSc in Computer Science and Engineering</h3>
+                            <p class="edu-institution">ETSIIT, University of Granada</p>
+                            <p class="edu-ranking">UGR Top 100 (Shanghai Ranking 2024)</p>
+                            <p class="edu-detail">2016–2021. Thesis: "Aplicación en criptografía de los problemas de optimización en retículos". SVP/CVP algorithms, LLL reduction, NTRU/LWE cryptosystems.</p>
+                        </div>
+                    </div>
+
+                    <!-- BSc Mathematics -->
+                    <div class="edu-card glass-card">
+                        <div class="edu-icon">
+                            <i data-lucide="sigma"></i>
+                        </div>
+                        <div class="edu-body">
+                            <h3>BSc in Mathematics</h3>
+                            <p class="edu-institution">Facultad de Ciencias, University of Granada</p>
+                            <p class="edu-detail">2016–2021. Dual degree combining mathematical foundations with computer science engineering.</p>
+                        </div>
+                    </div>
+
+                    <!-- Erasmus -->
+                    <div class="edu-card glass-card">
+                        <div class="edu-icon">
+                            <i data-lucide="plane"></i>
+                        </div>
+                        <div class="edu-body">
+                            <h3>Erasmus Program in Mathematics and Computer Science</h3>
+                            <p class="edu-institution">Università degli Studi Roma Tre, Rome, Italy</p>
+                            <p class="edu-detail">2019–2020. Exchange year in mathematics and computer science studies.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-label">CONTACT</span>
+                    <h2 class="section-title">Get In Touch</h2>
+                    <div class="section-divider"></div>
+                </div>
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <p>I'm open to opportunities in cryptography engineering, data science, and data engineering. With experience at Apple on WebKit cryptographic algorithms and at SciTheWorld building scalable data pipelines, I bring deep expertise in both security-critical systems and large-scale data processing. Open to conversations about cryptography, data science, and technology.</p>
+                        <div class="contact-links">
+                            <a href="mailto:angelaizqgar@gmail.com" class="contact-link" aria-label="Send email to Ángela">
+                                <i data-lucide="mail"></i>
+                                <span>angelaizqgar@gmail.com</span>
+                            </a>
+                            <a href="https://www.linkedin.com/in/angelaig/" class="contact-link" target="_blank" rel="noopener noreferrer" aria-label="Visit LinkedIn profile">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+                                <span>linkedin.com/in/angelaig</span>
+                            </a>
+                            <a href="https://github.com/angelaig" class="contact-link" target="_blank" rel="noopener noreferrer" aria-label="Visit GitHub profile">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.4 5.4 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65S8.93 17.38 9 18v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+                                <span>github.com/angelaig</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="contact-form-wrapper">
+                        <form id="contact-form" action="https://api.web3forms.com/submit" method="POST" class="contact-form">
+                            <input type="hidden" name="access_key" value="6d264755-c49c-4e37-b92c-dda340742cd6">
+                            <input type="hidden" name="subject" value="New contact from angelaig.github.io">
+                            <input type="hidden" name="from_name" value="Portfolio Contact Form">
+                            <input type="checkbox" name="botcheck" class="hidden" style="display:none">
+                            <div class="form-group">
+                                <label for="contact-name">Name</label>
+                                <input type="text" id="contact-name" name="name" placeholder="Your name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="contact-email">Email</label>
+                                <input type="email" id="contact-email" name="email" placeholder="your@email.com" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="contact-message">Message</label>
+                                <textarea id="contact-message" name="message" rows="5" placeholder="Your message..." required></textarea>
+                            </div>
+                            <button type="submit" id="contact-submit" class="btn btn-primary btn-full">
+                                <i data-lucide="send"></i>
+                                <span>Send Message</span>
+                            </button>
+                            <div id="form-status" class="form-status"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#hero" class="footer-logo" aria-label="Back to top">
+                        <img src="assets/images/aig-logo-48.png" alt="ÁI Logo" width="48" height="48" style="border-radius: 12px;">
+                    </a>
+                    <p class="footer-title">Ángela Izquierdo García</p>
+                    <p class="footer-subtitle">Cryptography Engineer & Data Scientist</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#experience">Experience</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#certifications">Certifications</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h4>Connect</h4>
+                    <div class="social-links">
+                        <a href="https://github.com/angelaig" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.4 5.4 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65S8.93 17.38 9 18v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+                        </a>
+                        <a href="https://www.linkedin.com/in/angelaig/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+                        </a>
+                        <a href="mailto:angelaizqgar@gmail.com" aria-label="Send email">
+                            <i data-lucide="mail"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Ángela Izquierdo García. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+    <script src="https://unpkg.com/lucide@latest" defer></script>
+    <script src="js/particles.js?v=12" defer></script>
+    <script src="js/typed-effect.js?v=12" defer></script>
+    <script src="js/animations.js?v=12" defer></script>
+    <script src="js/filters.js?v=12" defer></script>
+    <script src="js/main.js?v=18" defer></script>
+
+</body>
+</html>

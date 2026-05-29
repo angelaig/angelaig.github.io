@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+     <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/favicon-32.png">
+     <link rel="shortcut icon" href="../assets/images/favicon.ico">
+     <title>MLOps Pipeline for Trading Models | Freelance Project</title>
+    <meta name="description" content="Freelance Project. MLOps pipeline for trading models with drift detection, automated retraining via Airflow, champion/challenger framework, and production monitoring using MLflow, EvidentlyAI, and Grafana.">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/typography.css">
+    <link rel="stylesheet" href="../css/utilities.css">
+		<script defer src="../js/script.js"></script>
+	</head>
+	<body>
+    <div class="navbar">
+      <a class="nav-title-link" href="../index.html#projects">
+        <image src="../assets/icons/arrow-right.svg" class="right-arrow-icon"/>
+        <span class="nav-title">&Aacute;ngela Izquierdo / Projects</span>
+        <a class="button" href="../assets/cv/cv_angela_2026.pdf" download aria-label="Download &Aacute;ngela Izquierdo's CV">
+          <span class="button-text">Download CV</span>
+        </a>
+      </a>
+    </div>
+    <div id="main-content">
+      <div id="project-header">
+        <div class="main-title">MLOps Pipeline for Trading Models</div>
+        <div class="subheader-text">Freelance Project</div>
+        <div class="body-text">MLOps pipeline for trading models with drift detection, leveraging Apple-level engineering experience. Trains a baseline LightGBM model for return prediction, then builds full production infrastructure around it : including feature stores, model registry, automated retraining, and champion/challenger deployment.</div>
+      </div>
+      <div id="project-details">
+        <div class="subheader-text">Project Details / Background</div>
+        <div class="project-details-content">
+          <div class="body-text">Designed and built an end-to-end MLOps pipeline for trading models that addresses the unique challenge of financial model degradation. Unlike traditional ML systems, financial models degrade due to regime changes, evolving market microstructure, and shifting correlations : this pipeline was built to detect and respond to that drift automatically.</div>
+          <div class="body-text">Trained a baseline LightGBM model for return prediction, then constructed full production infrastructure around it. The pipeline includes a feature store that tracks feature versions and computation timestamps, ensuring reproducibility and auditability across all model training runs.</div>
+          <div class="body-text">Integrated MLflow for model registry and experiment tracking, providing a centralised view of all model versions, hyperparameters, metrics, and artifacts. Every training run is logged and comparable, enabling data-driven decisions about model promotion.</div>
+          <div class="body-text">Implemented drift detection using Population Stability Index (PSI) and Kolmogorov-Smirnov tests on input features to catch data drift early. For concept drift, the system monitors rolling Sharpe ratio and information coefficient decay : metrics that capture the financial relevance of model predictions over time.</div>
+          <div class="body-text">Built automated retraining pipelines using Apache Airflow DAGs that trigger when drift thresholds are breached. The retraining workflow includes data validation, feature recomputation, model training, and evaluation against the current champion model before any promotion decision.</div>
+          <div class="body-text">Developed a champion/challenger framework for shadow-testing new models before promotion to production. Challenger models run in parallel against live data, and their predictions are compared to the champion's performance across multiple financial metrics before a swap is approved.</div>
+          <div class="body-text">The monitoring stack uses Grafana dashboards backed by Redis for real-time metric streaming and PostgreSQL for historical storage. EvidentlyAI generates drift reports that feed into Airflow triggers, closing the loop between detection and automated response.</div>
+        </div>
+      </div>
+      <div id="project-details" style="margin-bottom: 48px;">
+        <div class="subheader-text">Technologies</div>
+        <div class="project-details-content">
+          <div class="body-text">MLflow &bull; EvidentlyAI &bull; Apache Airflow &bull; Docker &bull; Redis &bull; PostgreSQL &bull; Grafana &bull; LightGBM</div>
+        </div>
+      </div>
+    </div>
+    <div id="footer">
+      <a class="icon-link" target="_blank" href="https://www.linkedin.com/in/angelaig">
+        <image src="../assets/icons/linkedin.svg" class="footer-icon"/>
+      </a>
+      <a class="icon-link" href="mailto:joseteolorente2@gmail.com">
+        <image src="../assets/icons/mail.svg" class="footer-icon"/>
+      </a>
+    </div>
+    <footer id="footer">
+      <p>&copy; 2026 &Aacute;ngela Izquierdo Garc&iacute;a. All rights reserved.</p>
+    </footer>
+	</body>
+</html>
